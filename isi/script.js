@@ -45,9 +45,9 @@ navLinks.forEach(link => {
 });
 
 // fallback khusus homepage
-if (currentPath === '/' || currentPath === '/index.html') {
+if (currentPath === '/' || currentPath === '/Index.html') {
     navLinks.forEach(link => {
-        if (new URL(link.href).pathname === '/index.html') {
+        if (new URL(link.href).pathname === '/Index.html') {
             link.classList.add('active');
         }
     });
