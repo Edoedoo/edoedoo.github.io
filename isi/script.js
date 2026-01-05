@@ -34,24 +34,22 @@ const navLinks = document.querySelectorAll('.navbar a');
 const currentPath = window.location.pathname;
 
 navLinks.forEach(link => {
-    // hapus active default
     link.classList.remove('active');
 
-    // ambil href link
     const linkPath = new URL(link.href).pathname;
 
-    // cocokkan halaman
+    // cocokkan path langsung
     if (linkPath === currentPath) {
         link.classList.add('active');
     }
 });
 
-// fallback untuk homepage (index.html / /)
-if (
-    currentPath === '/' ||
-    currentPath.endsWith('index.html')
-) {
-    document
-        .querySelector('.navbar a[href*="index"]')
-        ?.classList.add('active');
+// fallback khusus homepage
+if (currentPath === '/' || currentPath === '/index.html') {
+    navLinks.forEach(link => {
+        if (new URL(link.href).pathname === '/index.html') {
+            link.classList.add('active');
+        }
+    });
 }
+
