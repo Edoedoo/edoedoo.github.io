@@ -397,6 +397,7 @@ span {
     align-items: center;
     min-height: auto;
     padding-bottom: 3rem;
+    flex-wrap:wrap;        
 }
 .pendidikan .education-row {
     display: flex;
