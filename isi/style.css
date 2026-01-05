@@ -963,12 +963,11 @@ background-position: right;
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 1rem;
     }
     .navbar.active a {
         transform: translateX(0);
-        transition-delay: .25s;
-        margin:5px;        
+        transition-delay: .25s;       
     }
     .home-imghover {
         pointer-events: none;
