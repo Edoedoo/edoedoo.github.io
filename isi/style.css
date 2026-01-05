@@ -203,7 +203,8 @@ section {
 .btn-box {
     position: relative;
     display:flex;
-    gap:5px;           
+    gap:5px;     
+    align-items:center;        
     /* width: 30.3rem; */
     height: 4rem;
     animation: hubungi-tentang 10s linear infinite;
