@@ -968,6 +968,7 @@ background-position: right;
     .navbar.active a {
         transform: translateX(0);
         transition-delay: .25s;
+        margin:5px;        
     }
     .home-imghover {
         pointer-events: none;
@@ -994,6 +995,9 @@ background-position: right;
         width: 38px;
         height: 38px;
     }
+    .beranda {
+    background: none;
+    }            
 }
 @media (max-width: 444px) {
     .home-content p {
