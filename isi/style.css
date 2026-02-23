@@ -497,6 +497,8 @@ span {
 }
 .skills-row .skills-column {
     flex: 1 1 2rem;
+    justify-content: center;
+    display: grid;
 }
 .skills-column .titlevba {
     font-size: 2.5 rem;
@@ -539,7 +541,7 @@ span {
     align-items: center;
     height: 250px;
     width: 400px;
-    background: url(../keahlianvba/excelvba1.jpg);
+    background: url(../keahlianvba/vbaappscript1.jpg);
     border-radius: .6rem;
     background-position: center;
     background-size: cover;
@@ -568,7 +570,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background : url(../keahlianvba/excelvba2.jpg);
+    background : url(../keahlianvba/vbaappscript2.jpg);
     background-size: cover;
     z-index: -1;
     transition: .5s;
@@ -1047,7 +1049,7 @@ background-position: right;
     align-items: center;
     height: 190px;
     width: 340px;
-    background: url(../keahlianvba/excelvba1.jpg);
+    background: url(../keahlianvba/vbaappscript1.jpg);
     border-radius: .6rem;
     background-position: center;
     background-size: cover;
@@ -1076,7 +1078,7 @@ background-position: right;
     left: 0;
     width: 0;
     height: 100%;
-    background : url(../keahlianvba/excelvba2.jpg);
+    background : url(../keahlianvba/vbaappscript2.jpg);
     background-size: cover;
     z-index: -1;
     transition: .5s;
@@ -1242,7 +1244,7 @@ background-position: right;
 }
 
             /* KEYFRAMES ANIMATION */
-@keyframes sosmed {
+/* @keyframes sosmed {
      0% {
         transform: rotate(360deg);
          opacity: 100%;
@@ -1256,7 +1258,7 @@ background-position: right;
         opacity: 100%;
      }
        
-}
+} */
        
 
 @keyframes hubungi-tentang {
@@ -1301,7 +1303,7 @@ background-position: right;
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-@keyframes keahlian1 {
+/* @keyframes keahlian1 {
     0% {
         transform: scale(0);
         transform: rotate(362deg);
@@ -1323,4 +1325,4 @@ background-position: right;
         transform: rotate(362deg);
         opacity: 60%;
     }
-}
+} */

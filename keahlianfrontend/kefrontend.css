@@ -1,6 +1,4 @@
-            /* SETTING TEXT */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,419 +8,159 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'poppins', sans-serif;
-}
-
-
-            /* PILIHAN WARNA  */
-:root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-}
-
-html {
-    font-size: 62,5%;
-    overflow-x: hidden;
-}
-
-
-            /* SETTING BODY KESELURUHAN */
-body {    
-    background: rgb(1, 13, 32);
-    color: var(--text-color);
-}
-span {
-    color: var(--main-color);
-}
-p {
-    margin: 1rem 0;
-}
-.exit {
-    top: 0;
-    padding-top: 5rem;
-    padding-left: 100%;
-    padding-right: 100%;
-    padding-bottom: .1rem;
-    right: 3rem;
-    justify-content: center;
-    background-color:rgb(1, 13, 32);
-    position: fixed;
-    z-index: 99;
-}
-.exit h2 {
-    font: x-large;
-    color: #0e3742;
-    top: 1.5rem;
-    right: 4.4rem;
-    justify-content: right;
-    position: fixed;
-    background: transparent;
-    display: flex;
-    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0008); */
-    animation: kembali 5s linear infinite;
-    z-index: 100;
-}
-.exit h2:hover {
-    height: 2.5rem;
-    width: 8rem;
-    align-items: center;
-    justify-content: center;
-    background: red;
-    border-radius: 2rem;
-}
-.kotak-deskripsi { 
-    margin: 5rem 2rem;
-    text-align: center;
-    background: transparent;
-}
-
-.gambar-deskripsi {
-    position: relative;
-    align-items: center;
-    height: 100%;
-    display: flex;
-    gap: 2rem;
-    padding: 2rem 3rem;
-    justify-content: center;
-    background: transparent;
- 
-}
-.deskripsi {
-    padding-left: 4rem;
-    max-width: 50rem;
-    min-height: 10rem;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #000000);
+    color: white;
+  }
+  
+  /* SECTION */
+  .portfolio {
+    padding: 40px 8%;
+    min-height: 100vh;
+  }
+  
+  /* BACK BUTTON */
+  .exit {
+    margin-bottom: 20px;
+  }
+  
+  .back-btn {
     text-decoration: none;
-    text-align: left;
-    background: transparent;
-    color: rgb(255, 255, 255);
-}
-/* .efek {
-    height: 500px;
-    width: 600px;
-    display: flex;
-    color: #00abf0;
-    background: brown;
-    border: .5rem solid green;
-    overflow: hidden;
-
-} */
-.deskripsikiri {
-    display: flex;
-    justify-content: center;
+    color: #00d4ff;
+    font-size: 20px;
+    display: inline-flex;
     align-items: center;
-    min-height: 400px;
-    min-width: 400px;
-    position: relative;
-    background: transparent;
-    border-radius: 20px;
+    gap: 5px;
+    transition: 0.3s;
+  }
+  
+  .back-btn:hover {
+    color: #ffffff;
+    transform: translateX(-3px);
+  }
+  
+  /* HEADER */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .header p {
+    color: #00d4ff;
+    font-size: 16px;
+  }
+  
+  /* DESCRIPTION */
+  .description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+    color: #cccccc;
+  }
+  
+  /* GRID */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+  
+  /* CARD */
+  .card {
+    background: #111;
+    border-radius: 12px;
     overflow: hidden;
-
-}
-img {
-    position: relative;
-    height: 250px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px black;
-    z-index: 2;
-    animation: ukuran 10s linear infinite;
-}
-.deskripsikiri::before {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 150%;
-    background: linear-gradient(rgb(255, 217, 0), rgb(231, 76, 4));
-    animation: rotasi 5s linear infinite;
-}
-.deskripsikiri::after {
-    content: '';
-    position: absolute;
-    background: rgb(1, 13, 32);
-    inset: 5px;
-    border-radius: 20px;
-
-}
-.gpersen {
-    position: relative;
-    display: flex;
-    gap: 2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 0 transparent;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.2);
+  }
+  
+  /* IMAGE */
+  .card img {
     width: 100%;
-    height: 10rem;
-    padding: 1rem;
-    text-align: center;
-    justify-content: left;
-    overflow: hidden;
-}
-.gpersen:hover::before{
-    content: '';
-    top: -12rem;
-    left: 0rem;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 45rem;
-    height: 37rem;
-    background: linear-gradient(rgb(255, 217, 0), rgb(231, 76, 4));
-    animation: rotasi 5s linear infinite;
-}
-.gpersen::after {
-    content: '';
-    position: absolute;
-    background: rgb(1, 13, 32);
-    inset: 5px -5px;
-
-}
-.gambardeskripsi1 {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background: url(htmlpng.png);
-    background-size: cover;
-    z-index: 99
-}
-.gambardeskripsi2 {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background: url(csspng.png);
-    background-size: cover;
-    z-index: 99
-}
-.gambardeskripsi3 {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background: url(jspng.png);
-    background-size: cover;
-    z-index: 99
-}
-.persen {
-    margin: 1rem 1rem;
-    position: relative;
-    text-align: center;
-    width: 15rem;
-    z-index: 99
-}
-.persen h4 {
-    color:  var(--bg-color);
-    background: var(--main-color);
-    border-radius: 2rem;
-    height: 2rem;
-    width: 100%
-}
-
-
-@media (max-width: 1200px) {
-    html {
-        font-size: 85%;
-    }
-    .deskripsikiri {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 400px;
-        min-width: 400px;
-        position: relative;
-        background: transparent;
-        border-radius: 20px;
-        overflow: hidden;
-    
-    }
-    img {
-        position: relative;
-        height: 250px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-shadow: 2px 2px black;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-        z-index: 2;
-        animation: ukuran 10s linear infinite;
-    }
-    .deskripsikiri::before {
-        content: '';
-        position: absolute;
-        width: 300px;
-        height: 150%;
-        background: linear-gradient(rgb(255, 217, 0), rgb(231, 76, 4));
-        animation: rotasi 5s linear infinite;
-    }
-    .deskripsikiri::after {
-        content: '';
-        position: absolute;
-        background: rgb(1, 13, 32);
-        inset: 5px;
-        border-radius: 20px;
-    
-    }
-}
-@media (max-width: 991px) {
-   html {
-    font-size: 75%;
-   }
-   .deskripsi {
-    max-width: 65rem;
-   }
-   .deskripsikiri {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 250px;
-        min-width: 250px;
-        position: relative;
-        background: transparent;
-        border-radius: 20px;
-        overflow: hidden;
-    
-    }
-    img {
-        position: relative;
-        height: 250px;
-        width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-shadow: 2px 2px black;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-        z-index: 2;
-        animation: ukuran 10s linear infinite;
-    }
-    .deskripsikiri::before {
-        content: '';
-        position: absolute;
-        width: 150px;
-        height: 150%;
-        background: linear-gradient(rgb(255, 217, 0), rgb(231, 76, 4));
-        animation: rotasi 5s linear infinite;
-    }
-    .deskripsikiri::after {
-        content: '';
-        position: absolute;
-        background: rgb(1, 13, 32);
-        inset: 5px;
-        border-radius: 20px;
-    
-    }
-}
-@media (max-width: 520px) {
-    html {
-        font-size: 65%;
-    }
-   .gambar-deskripsi {
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* CARD TEXT */
+  .card-text {
+    padding: 15px;
+  }
+  
+  .card-text h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .card-text p {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.5;
+  }
+  
+  /* MODAL */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    gap: .1rem;
-    padding: 0;
-    justify-content: center;
-    background: transparent;
-
-   }
-   .deskripsi {
-    padding-left:.2rem;
-    max-width: 50rem;
-    min-height: 10rem;
-    text-decoration: none;
-    justify-content: center;
-    text-align: center;
-    background: transparent;
-    color: rgb(255, 255, 255);
-   }
-   .deskripsikiri {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 250px;
-    min-width: 250px;
-    position: relative;
-    background: transparent;
-    border-radius: 20px;
-    overflow: hidden;
-
-}
-img {
-    position: relative;
-    height: 250px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px black;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-    z-index: 2;
-    animation: ukuran 10s linear infinite;
-}
-.deskripsikiri::before {
-    content: '';
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+  
+  .close {
     position: absolute;
-    width: 150px;
-    height: 150%;
-    background: linear-gradient(rgb(255, 217, 0), rgb(231, 76, 4));
-    animation: rotasi 5s linear infinite;
-}
-.deskripsikiri::after {
-    content: '';
-    position: absolute;
-    background: rgb(1, 13, 32);
-    inset: 5px;
-    border-radius: 20px;
-}
-}
-@media (max-width: 462px) {
-   html {
-    font-size: 60%;
-   }
-   .deskripsi {
-    width: 39rem;
-   }
-    
-}
-@keyframes ukuran {
-    0% {
-        opacity: 100%;
-        transform: scale(.9);
-        transform: rotate(360deg);
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close:hover {
+    color: #00d4ff;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 24px;
     }
-    50% {
-        opacity: 35%;
-        transform: scale(1.1);
-        transform: rotate(350deg); 
+  
+    .description {
+      font-size: 14px;
     }
-    100% {
-        opacity: 100%;
-        transform: scale(.9);
-        transform: rotate(360deg);
+  
+    .card img {
+      height: 150px;
     }
-   
-}
-@keyframes rotasi {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes kembali {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
-        color:  #0e3742;
-        box-shadow: none;
-    }
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
-        color: #fff;
-        box-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4,
-    }
-}
+  }
