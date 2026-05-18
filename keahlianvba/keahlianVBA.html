@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VBA</title>
-    <link rel="stylesheet" href="kevba.css" />
 
-    <!-- box icon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VBA</title>
+  <link rel="stylesheet" href="kevba.css" />
 
-    <section class="portfolio">
-      <div class="exit">
-        <a href="../isi/Keahlian.html" class="back-btn">
-          <i class='bx bx-arrow-back'></i> Kembali
-        </a>
-      </div>
-    
-      <div class="header">
-        <h1>Sistem Akuntansi Otomatis</h1>
-        <p>VBA Excel & Google Apps Script</p>
-      </div>
-    
-      <div class="description">
-        <p>
-          Sistem akuntansi terintegrasi dimana input jurnal dilakukan satu kali,
-          kemudian seluruh laporan keuangan terbentuk otomatis melalui proses
-          klasifikasi dan perhitungan sistematis.
-        </p>
-      </div>
-    
-      <div class="grid-container">
-    
-        <div class="card">
-          <img src="jurnal.JPG" alt="Jurnal Umum">
-          <div class="card-text">
-            <h3>Jurnal Umum & Penyesuaian</h3>
-            <p>Input transaksi dan validasi debit kredit otomatis.</p>
-          </div>
-        </div>
-    
-        <div class="card">
-          <img src="siklus1.JPG" alt="Buku Besar">
-          <div class="card-text">
-            <h3>Buku Besar & Neraca Saldo</h3>
-            <p>Posting otomatis dan perhitungan saldo berjalan.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="siklus2.JPG" alt="Neraca Lajur">
-          <div class="card-text">
-            <h3>Neraca Lajur</h3>
-            <p>Proses penyesuaian dan validasi sebelum laporan akhir.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="report.JPG" alt="Laporan Keuangan">
-          <div class="card-text">
-            <h3>Laporan Keuangan Otomatis</h3>
-            <p>Laba Rugi, Perubahan Modal, dan Neraca terbentuk otomatis.</p>
-          </div>
-        </div>
+  <!-- box icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-        <div class="card">
-          <img src="dashboard.JPG" alt="Dashboard Reporting">
-          <div class="card-text">
-            <h3>Dashboard Monitoring Penjualan</h3>
-            <p>Monitoring target, revenue, dan performa outlet secara otomatis.</p>
-          </div>
-        </div>
-    
-        <div class="card">
-          <img src="grafik.JPG" alt="Grafik Outlet">
-          <div class="card-text">
-            <h3>Grafik Analisis Penjualan</h3>
-            <p>Visualisasi data harian & bulanan untuk evaluasi performa outlet.</p>
-          </div>
-        </div>
-        
-      </div>
-    
-    </section>
-    <div id="modal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modal-img">
+<body>
+
+  <section class="portfolio">
+    <div class="exit">
+      <a href="../isi/Keahlian.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Kembali
+      </a>
     </div>
-    
-    <script>
-      const images = document.querySelectorAll('.card img');
-      const modal = document.getElementById('modal');
-      const modalImg = document.getElementById('modal-img');
-      const closeBtn = document.querySelector('.close');
-    
-      images.forEach(img => {
-        img.onclick = function() {
-          modal.style.display = "block";
-          modalImg.src = this.src;
-        }
-      });
-    
-      closeBtn.onclick = function() {
-        modal.style.display = "none";
+
+    <div class="header">
+      <h1>Sistem Akuntansi Otomatis</h1>
+      <p>VBA Excel & Google Apps Script</p>
+    </div>
+
+    <div class="description">
+      <p>
+        Sistem akuntansi terintegrasi dimana input jurnal dilakukan satu kali,
+        kemudian seluruh laporan keuangan terbentuk otomatis melalui proses
+        klasifikasi dan perhitungan sistematis.
+      </p>
+    </div>
+
+    <div class="grid-container">
+
+      <div class="card">
+        <img src="jurnal.JPG" alt="Jurnal Umum">
+        <div class="card-text">
+          <h3>Jurnal Umum & Penyesuaian</h3>
+          <p>Input transaksi dan validasi debit kredit otomatis.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="siklus1.JPG" alt="Buku Besar">
+        <div class="card-text">
+          <h3>Buku Besar & Neraca Saldo</h3>
+          <p>Posting otomatis dan perhitungan saldo berjalan.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="siklus2.JPG" alt="Neraca Lajur">
+        <div class="card-text">
+          <h3>Neraca Lajur</h3>
+          <p>Proses penyesuaian dan validasi sebelum laporan akhir.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="report.JPG" alt="Laporan Keuangan">
+        <div class="card-text">
+          <h3>Laporan Keuangan Otomatis</h3>
+          <p>Laba Rugi, Perubahan Modal, dan Neraca terbentuk otomatis.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dashboard.JPG" alt="Dashboard Reporting">
+        <div class="card-text">
+          <h3>Dashboard Monitoring Penjualan</h3>
+          <p>Monitoring target, revenue, dan performa outlet secara otomatis.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="grafik.JPG" alt="Grafik Outlet">
+        <div class="card-text">
+          <h3>Grafik Analisis Penjualan</h3>
+          <p>Visualisasi data harian & bulanan untuk evaluasi performa outlet.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.card img');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
       }
-    </script>
-    
-    </body>
+    });
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+
 </html>

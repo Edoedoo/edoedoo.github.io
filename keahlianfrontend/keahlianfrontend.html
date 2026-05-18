@@ -1,115 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend</title>
-    <link rel="stylesheet" href="kefrontend.css" />
-  </head>
-  <body>
 
-    <section class="portfolio">
-      <div class="exit">
-        <a href="../isi/Keahlian.html" class="back-btn">
-          <i class='bx bx-arrow-back'></i> Kembali
-        </a>
-      </div>
-    
-      <div class="header">
-        <h1>FULLSTACK PROJECT EXPLANATION</h1>
-        <p>Integrated Business Management System</p>
-      </div>
-    
-      <div class="description">
-        <p>Project ini adalah sistem manajemen bisnis terintegrasi berbasis React dan Python dengan arsitektur REST API dan database relasional.
-Project ini dibangun menggunakan React sebagai frontend untuk membangun antarmuka berbasis komponen yang dinamis dan responsif, serta Python sebagai backend untuk menangani REST API, logika bisnis, dan pengelolaan database. Sistem mencakup modul inventory, purchase order, POS, akuntansi, reporting, dan role-based access control yang saling terintegrasi dalam satu arsitektur modular. Seluruh proses transaksi tidak hanya menyimpan data, tetapi juga menjalankan validasi, pembaruan stok, pencatatan jurnal otomatis, dan agregasi laporan secara konsisten dan aman.
-        </p>
-      </div>
-    
-      <div class="grid-container">
-    
-        <div class="card">
-          <img src="marketplace.JPG" alt="Header & Search">
-          <div class="card-text">
-            <h3>Marketplace Econ</h3>
-            <p>Platform e-commerce dengan sistem kategori, pencarian produk, dan katalog dinamis yang terintegrasi dengan backend untuk pengelolaan data dan transaksi.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="kasir.JPG" alt="Sidebar Kategori">
-          <div class="card-text">
-            <h3>Kasir</h3>
-            <p>Sistem Point of Sale (POS) dengan fitur keranjang belanja, perhitungan otomatis, diskon, dan pencatatan transaksi real-time.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="inventoryrkt.JPG" alt="Product Card">
-          <div class="card-text">
-            <h3>Inventory Menu</h3>
-            <p>Manajemen data produk dengan multi harga, pengaturan stok, pencarian cepat, serta kontrol kategori barang.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="report.JPG" alt="Rekomendasi Produk">
-          <div class="card-text">
-            <h3>Laporan Penjualan</h3>
-            <p>Monitoring penjualan berdasarkan periode, kasir, dan mekanik dengan perhitungan margin serta ringkasan performa.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="keuangancsg.JPG" alt="Loading State">
-          <div class="card-text">
-            <h3>System Finance</h3>
-            <p>Sistem pencatatan keuangan berbasis jurnal dengan validasi debit kredit dan integrasi otomatis dari transaksi.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="inventory.JPG" alt="Dark Theme UI">
-          <div class="card-text">
-            <h3>Sistem Inventory</h3>
-            <p>Pengelolaan stok masuk dan keluar yang terintegrasi dengan modul pembelian dan penjualan untuk menjaga konsistensi data.</p>
-          </div>
-        </div>
-        
-        <div class="card">
-          <img src="setting.JPG" alt="Dark Theme UI">
-          <div class="card-text">
-            <h3>Menu Administrator</h3>
-            <p>Pengaturan user dan hak akses berbasis role untuk memastikan keamanan serta kontrol operasional sistem.</p>
-          </div>
-        </div>
-        
-      </div>
-    
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend</title>
+  <link rel="stylesheet" href="kefrontend.css" />
+</head>
 
-    <div id="modal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modal-img">
+<body>
+
+  <section class="portfolio">
+    <div class="exit">
+      <a href="../isi/Keahlian.html" class="back-btn">
+        <i class='bx bx-arrow-back'></i> Kembali
+      </a>
     </div>
-    
-    <script>
-      const images = document.querySelectorAll('.card img');
-      const modal = document.getElementById('modal');
-      const modalImg = document.getElementById('modal-img');
-      const closeBtn = document.querySelector('.close');
-    
-      images.forEach(img => {
-        img.onclick = function() {
-          modal.style.display = "block";
-          modalImg.src = this.src;
-        }
-      });
-    
-      closeBtn.onclick = function() {
-        modal.style.display = "none";
+
+    <div class="header">
+      <h1>FULLSTACK PROJECT EXPLANATION</h1>
+      <p>Integrated Business Management System</p>
+    </div>
+
+    <div class="description">
+      <p>Project ini adalah sistem manajemen bisnis terintegrasi berbasis React dan Python dengan arsitektur REST API
+        dan database relasional.
+        Project ini dibangun menggunakan React sebagai frontend untuk membangun antarmuka berbasis komponen yang dinamis
+        dan responsif, serta Python sebagai backend untuk menangani REST API, logika bisnis, dan pengelolaan database.
+        Sistem mencakup modul inventory, purchase order, POS, akuntansi, reporting, dan role-based access control yang
+        saling terintegrasi dalam satu arsitektur modular. Seluruh proses transaksi tidak hanya menyimpan data, tetapi
+        juga menjalankan validasi, pembaruan stok, pencatatan jurnal otomatis, dan agregasi laporan secara konsisten dan
+        aman.
+      </p>
+    </div>
+
+    <div class="grid-container">
+
+      <div class="card">
+        <img src="marketplace.JPG" alt="Header & Search">
+        <div class="card-text">
+          <h3>Marketplace Econ</h3>
+          <p>Platform e-commerce dengan sistem kategori, pencarian produk, dan katalog dinamis yang terintegrasi dengan
+            backend untuk pengelolaan data dan transaksi.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="kasir.JPG" alt="Sidebar Kategori">
+        <div class="card-text">
+          <h3>Kasir</h3>
+          <p>Sistem Point of Sale (POS) dengan fitur keranjang belanja, perhitungan otomatis, diskon, dan pencatatan
+            transaksi real-time.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="inventoryrkt.JPG" alt="Product Card">
+        <div class="card-text">
+          <h3>Inventory Menu</h3>
+          <p>Manajemen data produk dengan multi harga, pengaturan stok, pencarian cepat, serta kontrol kategori barang.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="report.JPG" alt="Rekomendasi Produk">
+        <div class="card-text">
+          <h3>Laporan Penjualan</h3>
+          <p>Monitoring penjualan berdasarkan periode, kasir, dan mekanik dengan perhitungan margin serta ringkasan
+            performa.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="keuangancsg.JPG" alt="Loading State">
+        <div class="card-text">
+          <h3>System Finance</h3>
+          <p>Sistem pencatatan keuangan berbasis jurnal dengan validasi debit kredit dan integrasi otomatis dari
+            transaksi.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="inventory.JPG" alt="Dark Theme UI">
+        <div class="card-text">
+          <h3>Sistem Inventory</h3>
+          <p>Pengelolaan stok masuk dan keluar yang terintegrasi dengan modul pembelian dan penjualan untuk menjaga
+            konsistensi data.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="setting.JPG" alt="Dark Theme UI">
+        <div class="card-text">
+          <h3>Menu Administrator</h3>
+          <p>Pengaturan user dan hak akses berbasis role untuk memastikan keamanan serta kontrol operasional sistem.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.card img');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn = document.querySelector('.close');
+
+    images.forEach(img => {
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
       }
-    </script>
-    
-  </body>
+    });
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+
 </html>

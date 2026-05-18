@@ -1,107 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontak</title>
-    <link rel="stylesheet" href="style.css" />
 
-    <!-- box icon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- header design -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css" />
 
-    <header class="headerkontak">
-      <a href="#" class="logo">Edo.</a>
+  <!-- box icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
 
-      <div class="bx bx-menu" id="menu-icon"></div>
+<body>
+  <!-- header design -->
 
-      <nav class="navbar">
-        <a href="../Index.html" class="active">Beranda</a>
-        <!-- <a href="#tentang">Tentang</a> -->
-        <a href="Pendidikan.html">Pengalaman</a>
-        <a href="Keahlian.html">Keahlian</a>
-        <a href="Kontak.html">Kontak</a>
-      </nav>
-    </header>
+  <header class="headerkontak">
+    <a href="#" class="logo">Edo.</a>
 
-    <!-- KONTAK DESIGN -->
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-    <section class="kontak" id="section">
-      <h2 class="heading">Tinggalkan <span>Pesan</span></h2>
+    <nav class="navbar">
+      <a href="../Index.html" class="active">Beranda</a>
+      <!-- <a href="#tentang">Tentang</a> -->
+      <a href="Pendidikan.html">Pengalaman</a>
+      <a href="Keahlian.html">Keahlian</a>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
 
-      <form action="https://formspree.io/f/mkndnnpg" method="post">
-        <div class="input-box">
-          <div class="input-field">
-            <label for="Nama">
-              <input
-                type="text"
-                name="Nama"
-                placeholder="Nama Lengkap"
-                required
-              />
-              <span class="focus"></span>
-            </label>
-          </div>
-          <div class="input-field">
-            <label for="Alamat">
-              <input
-                type="text"
-                name="email"
-                placeholder="Alamat Email"
-                required
-              />
-              <span class="focus"></span>
-            </label>
-          </div>
+  <!-- KONTAK DESIGN -->
+
+  <section class="kontak" id="section">
+    <h2 class="heading">Tinggalkan <span>Pesan</span></h2>
+
+    <form action="https://formspree.io/f/mkndnnpg" method="post">
+      <div class="input-box">
+        <div class="input-field">
+          <label for="Nama">
+            <input type="text" name="Nama" placeholder="Nama Lengkap" required />
+            <span class="focus"></span>
+          </label>
         </div>
-
-        <div class="input-box">
-          <div class="input-field">
-            <label for="telepon">
-              <input
-                type="number"
-                name="Telepon"
-                placeholder="No.Telepon / WhatsApp"
-                required
-              />
-              <span class="focus"></span>
-            </label>
-          </div>
-          <div class="input-field">
-            <label for="subject">
-              <input
-                type="text"
-                name="subject"
-                placeholder="Email subject"
-                required
-              />
-              <span class="focus"></span>
-            </label>
-          </div>
+        <div class="input-field">
+          <label for="Alamat">
+            <input type="text" name="email" placeholder="Email anda" required />
+            <span class="focus"></span>
+          </label>
         </div>
+      </div>
 
-        <div class="textarea-field">
-          <textarea
-            name="pesan"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Pesan anda"
-          ></textarea>
-          <span class="focus1"></span>
+      <div class="input-box">
+        <div class="input-field">
+          <label for="telepon">
+            <input type="number" name="Telepon" placeholder="No.Telepon / WhatsApp" required />
+            <span class="focus"></span>
+          </label>
         </div>
-
-        <div class="btn-box btns">
-          <button type="submit" class="btn">kirim</button>
+        <div class="input-field">
+          <label for="subject">
+            <input type="text" name="subject" placeholder="Email subject" required />
+            <span class="focus"></span>
+          </label>
         </div>
-      </form>
-    </section>
+      </div>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="textarea-field">
+        <textarea name="pesan" id="" cols="30" rows="10" placeholder="Pesan anda"></textarea>
+        <span class="focus1"></span>
+      </div>
+
+      <div class="btn-box btns">
+        <button type="submit" class="btn">kirim</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
